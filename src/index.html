@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Personal Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,9 +16,9 @@
     <div class="nav-container">
       <a href="#" class="nav-logo">Your Name</a>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
       </ul>
     </div>
   </nav>
@@ -25,21 +26,38 @@
   <main>
     <!-- Hero Section -->
     <section id="home" class="hero">
-      <h1>Welcome to My Website</h1>
-      <p>I'm a passionate developer/designer creating amazing digital experiences. Explore my work and thoughts on technology, design, and more.</p>
-      <a href="#about" class="btn">Learn More</a>
+      <div class="hero-content">
+        <h1>Welcome to My Digital Space</h1>
+        <p>I'm a passionate developer/designer creating amazing digital experiences. Explore my work and thoughts on technology, design, and more.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn"><i class="fas fa-user"></i> Learn More</a>
+          <a href="#blog" class="btn glass"><i class="fas fa-blog"></i> Read Blog</a>
+        </div>
+      </div>
+      <div class="hero-background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about glass">
       <div class="about-content">
         <h2>About Me</h2>
         <p>Hello! I'm a creative professional with expertise in web development and design. I love building beautiful, functional websites and applications that solve real-world problems.</p>
         <p>With years of experience in the tech industry, I've worked on various projects ranging from small business websites to large-scale applications.</p>
-        <a href="#" class="btn">Download Resume</a>
+        <div class="skills">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+        </div>
+        <a href="#" class="btn"><i class="fas fa-download"></i> Download Resume</a>
       </div>
       <div class="about-image">
-        <img src="https://www.sportsboom.com/_next/image?url=https%3A%2F%2Fassets.sportsboom.com%2FRahul_Dravid_Test_Batting_for_India_d069e14c03.jpeg&w=1200&q=75" alt="Profile picture" loading="lazy">
+        <img src="https://via.placeholder.com/600x400" alt="Profile picture" loading="lazy">
       </div>
     </section>
 
@@ -53,7 +71,7 @@
           <div class="blog-content">
             <h3>Getting Started with Web Development</h3>
             <p>Learn the essential tools and technologies needed to start your web development journey.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn"><i class="fas fa-arrow-right"></i> Read More</a>
           </div>
         </article>
 
@@ -63,7 +81,7 @@
           <div class="blog-content">
             <h3>Modern CSS Techniques</h3>
             <p>Explore the latest CSS features and techniques for building modern websites.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn"><i class="fas fa-arrow-right"></i> Read More</a>
           </div>
         </article>
 
@@ -73,7 +91,7 @@
           <div class="blog-content">
             <h3>Responsive Design Best Practices</h3>
             <p>Tips and tricks for creating websites that look great on all devices.</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn"><i class="fas fa-arrow-right"></i> Read More</a>
           </div>
         </article>
       </div>
@@ -81,9 +99,16 @@
   </main>
 
   <!-- Footer -->
-  <footer class="text-center" style="margin: 4rem 0 2rem;">
+  <footer class="text-center glass">
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+    </div>
     <p>© 2024 Your Name. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
